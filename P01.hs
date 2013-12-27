@@ -15,6 +15,11 @@ module P01 where
   -- The trivial solution
   --myLast list = last list
 
-  myLast [head', tail'] = if tail' == []
-    then head'
-    else myLast tail'
+  myLast :: [a] -> a
+  myLast [x] = x
+  myLast (x : xs) = myLast xs
+
+  --myLast [head', tail'] = 
+  --  if tail' == []
+  --    then head'
+  --  else myLast tail'

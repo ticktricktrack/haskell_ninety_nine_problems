@@ -9,3 +9,6 @@ module P01Spec where
       it "returns the last element in a list with integers" $
         myLast [1,2,3,4] `shouldBe` 4
       
+      it "returns the last element in a list with chars" $
+        myLast ['a', 'b', 'c', 'd'] `shouldBe` 'd'
+      
